@@ -23,7 +23,7 @@ jobs:
 
     - name: Set version as tag value
       run: |
-        mvn versions:set -DnewVersion=$GITHUB_REF
+        mvn versions:set -DnewVersion=${GITHUB_REF:10}
         mvn version:commit
 
     - name: Build with Maven
