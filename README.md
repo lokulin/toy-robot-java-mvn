@@ -1,6 +1,3 @@
-
-
-
 ## Starting a new mvn project
 
 ```
